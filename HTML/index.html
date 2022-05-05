@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/styles.css" rel="stylesheet" type="text/CSS">
     <title>Calculator</title>
-    <link href="/calculator/CSS/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-        <div id="calculatorContainer">
-            <form name="calculator">
-                <input type="textfield" name="answer" value="" autocomplete="off" readonly>
-                <br>
-                <input type="button" value="7" onclick="document.calculator.answer.value+='7'" class="gray">
-                <input type="button" value="8" onclick="document.calculator.answer.value+='8'" class="gray">
-                <input type="button" value="9" onclick="document.calculator.answer.value+='9'" class="gray">
-                <input type="button" value="+" onclick="document.calculator.answer.value+='+'" class="orange">
-                <br>
-                <input type="button" value="4" onclick="document.calculator.answer.value+='4'" class="gray">
-                <input type="button" value="5" onclick="document.calculator.answer.value+='5'" class="gray">
-                <input type="button" value="6" onclick="document.calculator.answer.value+='6'" class="gray">
-                <input type="button" value="-" onclick="document.calculator.answer.value+='-'" class="orange">
-                <br>
-                <input type="button" value="1" onclick="document.calculator.answer.value+='1'" class="gray">
-                <input type="button" value="2" onclick="document.calculator.answer.value+='2'" class="gray">
-                <input type="button" value="3" onclick="document.calculator.answer.value+='3'" class="gray">
-                <input type="button" value="x" onclick="document.calculator.answer.value+='*'" class="orange">
-                <br>
-                <input type="button" value="0" onclick="document.calculator.answer.value+='0'" class="gray">
-                <input type="reset" value="C">
-                <input type="button" value="=" onclick="document.calculator.answer.value=eval(document.calculator.answer.value)">
-                <input type="button" value="/" onclick="document.calculator.answer.value+='/'" class="orange">
-            </form>
-        </div>
-    </main>
     
-    <script src="/CALCULATOR/JS/index.js"></script>
+    <div class="calculator">
+        <div class="resultBar">
+            <span id="result"></span>
+        </div>
+        <input type="button" class="outOperator" value="C" id="delete">
+        <div class="controlls">
+            <input type="button" class="number" value="7" id="seven">
+            <input type="button" class="number" value="8" id="eight">
+            <input type="button" class="number" value="9" id="nine">
+            <input type="button" class="operator" value="/" id="divide">
+            <input type="button" class="number" value="4" id="four">
+            <input type="button" class="number" value="5" id="five">
+            <input type="button" class="number" value="6" id="six">
+            <input type="button" class="operator" value="*" id="multipy">
+            <input type="button" class="number" value="1" id="one">
+            <input type="button" class="number" value="2" id="two">
+            <input type="button" class="number" value="3" id="three">
+            <input type="button" class="operator" value="-" id="minus">
+            <input type="button" class="result" value="=" id="equal">
+            <input type="button" class="number" value="0" id="cero">
+            <input type="button" class="number" value="." id="coma">
+            <input type="button" class="operator" value="+" id="plus">
+        </div>
+    </div>
+
+    <script src="../JS/index.js"></script>
 </body>
 </html>
