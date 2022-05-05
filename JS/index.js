@@ -71,12 +71,12 @@ plus.addEventListener("click", function(){
 minus.addEventListener("click", function(){
     takeValue("-");
 })
-// multiply.addEventListener("click", function(){
-//     takeValue("*");
-// })
-// divide.addEventListener("click", function(){
-//     takeValue("/");
-// })
+multiply.addEventListener("click", function(){
+    takeValue("*");
+})
+divide.addEventListener("click", function(){
+    takeValue("/");
+})
 
 equal.addEventListener("click", function(){
     calculatorResult();
